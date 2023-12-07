@@ -21,7 +21,7 @@ function LoadMore() {
         console.log('RES:  -------')
         console.log(res)
         //更新数据
-        setData([...data, ...res]) //使用传播，只更新
+        setData([...data, ...res]) //使用...展开运算符，将fetch回来的数据res附加在其中
         page++
       })
     }
